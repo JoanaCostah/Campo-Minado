@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Início</title>
+<link rel="stylesheet" href="styleInicio.css">
+</head>
+
+<body>
+
+<div class="caixa">
+    <h2>Digite seu nome</h2>
+    <input type="text" id="nome" placeholder="Seu nome">
+    <br>
+    <button onclick="entrar()">Jogar</button>
+</div>
+
+<script>
+function entrar() {
+    const nome = document.getElementById("nome").value;
+
+    if (!nome) {
+        alert("Digite seu nome!");
+        return;
+    }
+
+    localStorage.setItem("jogadorNome", nome);
+    window.location.href = "jogo.html";
+}
+</script>
+
+</body>
+</html>
+

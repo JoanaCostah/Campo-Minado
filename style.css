@@ -1,0 +1,82 @@
+
+body {
+    margin: 0;
+    font-family: "Saira", sans-serif;
+    background: linear-gradient(135deg, #2c1a72, #6a4cff);
+    color: rgb(235, 27, 27);
+    text-align: center;
+}
+
+#painel {
+    margin-top: 20px;
+}
+
+#telaFinal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.caixa {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    gap: 6px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.celula {
+    width: 60px;
+    height: 60px;
+    background: #9fc2cc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aberta {
+    background: #f1ecce;
+}
+
+.bomba {
+    background: red;
+}
+
+#ranking {
+    width: 350px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+#ranking h2 {
+    margin-top: 0;
+    color: white;
+}
+
+#ranking p {
+    background: white;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-weight: bold;
+}
+.celular.berta{
+    color: red;
+}
